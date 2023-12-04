@@ -1,85 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>AI Bias "Hate is Learned"</title>
+</head>
+<body>
+  <div class="section" id="section1">
+    <p>You hear a robot in the distance calling out to you.</p>
+    <button onclick="showNextSection()">Walk closer?</button>
+  </div>
 
-  <head>
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Bias, "Hate is Learned"</title>
-  </head>
+  <div class="section" id="section2">
+    <h1>Hi I'm AL the AI Bot!</h1>
+    <p>I'm here to discuss algorithmic bias and its ethical dilemma. You walked over so now you have to listen.</p>
+    <img src="images/al.png" alt="Stressed AI">
+    <br>
+    <button onclick="showNextSection()">Next</button>
+  </div>
 
-  <body>
-
-    <header>
-      <div>
-        <br>
-        <br>
-        <h1>AI Bias "Hate is Learned"</h1>
-        <p>Algorithmic bias and its ethical dilemma.</p>
-        <hr>
-      </div>
-    </header>
-    <div>
-      <nav>
-        <ul>
-          <li><a href="#topic">Topic Overview</a></li>
-          <li><a href="#arguments">Opinions</a></li>
-          <li><a href="#impact">Impact on Everyday Life</a></li>
-          <li><a href="#stance">My Personal Stance</a></li>
-        </ul>
-      </nav>
-    </div>
-    <div>
-      <section id="topic">
-        <h2>Topic Overview:</h2>
-        <hr>
-        <figure> <img src="images/aibot.jpg" alt="Stressed AI"> <figcaption> Image by <a href="https://www.123rf.com/profile_siberianart"></a>Siberianart</figcaption> </figure>
-        <h3>"How is your topic related to Artificial Intelligence"</h3>
-        <p>Algorithmic bias is intertwined with AI; it's about the training, data, and decisions that AI uses. AI learns from data, which can be biased and spread dangerous misinformation. In order to create responsible AI, you must take algorithmic bias into consideration.
-        </p>
-      </section>
-      <hr>
-      <section id="arguments">
-        <h2>Arguments:</h2>
-        <hr>
-        <h3>"What is the argument at the heart of your topic?"</h3>
-        <p>That biased training data can lead to discriminatory and misled algorithms that perpetuate harmful stereotypes. To have a successful and equitable AI, you must be responsible with ethics and data development.</p>
-        <hr>
-        <h3>2 Main Contrasting Opinions:</h3>
-        <p>According to multiple articles and people arguing on the internet, the two opinions are:</p>
-        <p>AI bias isn't the problem <strong>VS.</strong> AI algorithmic bias must be actively addressed </p>
-        <hr>
-        <h3>What supports their opinions?:</h3>
-        <p>The side of AI bias isn't the problem, opts for a different perspective. They believe we need to address systematic bias and all data being put out instead of making developers add tons of guidelines and sift through data.
-        </p>
-        <p>The side that believes AI bias must be addressed while developing AI thinks that's unrealistic. When AI is left unchecked by humans for unbiased data, it can amplify negative bias. They believe we should address the patterns in our data as it's impossible to control bias in everything. We can't solely rely on societal improvements; it's about responsibility and ensuring that these tools contribute positively to society.
-        </p>
-      </section>
-      <hr>
-      <section id="impact">
-        <h2>"How does it impact daily life?"</h2>
-        <hr>
-        <p>AI bias has an enormous influence on everyday life and on several areas of society as a whole. Biased algorithms in the hiring and employment process can enable discrimination and prevent people from having equal chances for employment. Financial systems driven by biased AI could mistakenly widen the gaps in availability of resources. Algorithmic bias within healthcare has the possibility to cause inaccurate diagnoses and unequal treatment. When biased algorithms have an impact on the legal system, the fairness of decisions may be hindered and based in stereotypes. Education, the basis of development in society, may face issues if AI fuels incorrect data. Social media sites, which often operate through AI algorithms, have the potential to spread propaganda and create harmful echo chambers. Biased algorithms also can have an impact on customers, influencing purchase recommendations and promoting stereotypes. The prevalence of biased AI highlights the value of critical thinking, when blindly assuming information is unbiased it can lead to completely unethical conclusions.
-        </p>
-      </section>
-      <hr>
-      <section id="stance">
-        <h2>My Personal Stance:</h2>
-        <hr>
-        <p>Recent articles containing real-world evidence of algorithmic bias reinforce my desire to continue advancing equity and diversity in computer science, which I believe could decrease AI bias. The gender-biased AI recruiting tool that Amazon abandoned has been made public, drawing attention to the major issues confronting the technology industry. It emphasizes how easily it is for companies to let things slip by that cause minorities to lose job opportunities. The effects of bias in voice-operated systems have also been documented, as proven by the difficulties experienced by people with accents. This emphasizes the value of having DIVERSE DATA ALWAYS for equal access to tech. My advocacy in the technology industry is consistent with these findings; I want to stress the importance of inclusive programming, ethical practices, and diversity in computer science.</p>
-      </section>
-      <hr>
-    </div>
-    <footer>
-        <h2>Sources:</h2>
-  <ul>
-        <li><a href="https://www.washingtonpost.com/graphics/2018/business/alexa-does-not-understand-your-accent/">Washington Post</a></li>
-        <li><a href="https://www.reuters.com/article/us-amazon-com-jobs-automation-insight/amazon-scraps-secret-ai-recruiting-tool-that-showed-bias-against-women-idUSKCN1MK08G">Reuters</a></li>
-        <li><a href="https://plato.stanford.edu/entries/ethics-ai/">Stanford Encyclopedia of Philosophy</a></li>
-        <li><a href="https://maartensap.com/pdfs/sap2019risk.pdf">Maarten Sap's Paper</a></li>
-        <li><a href="https://www.theverge.com/2018/10/10/17958784/ai-recruiting-tool-bias-amazon-report">The Verge</a></li>
+  <div class="section" id="section3">
+    <h1>I'm going to answer the following questions for you today.</h1>
+    <ul>
+      <li>"How is your topic related to Artificial Intelligence"</li>
+      <li>"What is the argument at the heart of your topic?"</li>
+      <li>"What are the 2 main contrasting opinions?"</li>
+      <li>"What supports their opinions?"</li>
+      <li>"How does it impact daily life?"</li>
     </ul>
-        <p>Credits to <a href="mailto:gregr769@hsd.k12.or.us"> Riley Gregory</a> &copy; 2023.</p>
-    </footer>
-    </body>
+    <p>As well as Riley's personal stance.</p>
+    <img src="images/al.png" alt="Stressed AI">
+    <br>
+    <button onclick="showNextSection()">Next</button>
+  </div>
+
+  <div class="section" id="section4">
+    <h1>So, how does my topic relate to AI?</h1>
+    <p>Algorithmic bias is intertwined with AI. It's about the training, data, and decisions that AI uses.</p>
+    <p>AI learns from data, which can be biased and spread dangerous misinformation.</p>
+    <p>In order to create responsible AI, you must take algorithmic bias into consideration.</p>
+    <p>It helps provide equity in tech.</p>
+    <img src="images/al.png" alt="Stressed AI">
+    <br>
+    <button onclick="showNextSection()">Next</button>
+  </div>
+
+  <div class="section" id="section5">
+    <h1>What is the argument at the heart of my topic?</h1>
+    <p>That biased training data can lead to discriminatory and misled algorithms that perpetuate harmful stereotypes.</p>
+    <p>To have a successful and equitable AI, you must be responsible with ethics and data development.</p>
+    <img src="images/al.png" alt="Stressed AI">
+    <br>
+    <button onclick="showNextSection()">Next</button>
+  </div>
+
+
+  <div class="section" id="section6">
+    <h1>The 2 Main Contrasting Opinions:</h1>
+    <p>According to multiple articles and people arguing on the internet, the two opinions are:</p> 
+    <p>AI bias isn't the problem VS. AI algorithmic bias must be actively addressed.</p>
+    <img src="images/al.png" alt="Stressed AI">
+    <br>
+    <button onclick="showNextSection()">Next</button>
+  </div>
+
+
+  <div class="section" id="section7">
+    <h1> What supports the side of AI isn't the problem? </h1>
+    <p>The side of AI bias isn't the problem, opts for a different perspective.</p>
+    <p>They believe we need to address systematic bias and all data being put out </p>
+    <p>instead of making developers add tons of guidelines and sift through data, having to go against reality.</p>
+    <p>The other side that does believe AI bias must be addressed thinks that's unrealistic.</p>
+    <p>An article by Vox brings up an important part of this side of the debate</p>
+    <p>“should you create a search engine that deliberately shows a more balanced mix, even if it’s not a mix that reflects reality as it is today?” </p>
+    <img src="images/al.png" alt="Stressed AI">
+    <br>
+    <button onclick="showNextSection()">Next</button>
+  </div>
+
+
+  <div class="section" id="section8">
+    <h1> What supports the side of AI algorithmic bias must be actively addressed? </h1>
+    <p>When AI is left unchecked by humans for unbiased data, it can amplify negative bias.</p>
+    <p>They believe we should address the patterns in our data as it's impossible to control bias in everything.</p>
+    <p>We can't solely rely on societal improvements; it's about responsibility and ensuring that these tools contribute positively to society.</p>
+    <img src="images/al.png" alt="Stressed AI">
+    <br>
+    <button onclick="showNextSection()">Next</button>
+  </div>
+
+
+  <div class="section" id="section9">
+    <h1> What supports the side of AI algorithmic bias must be actively addressed? (Continued)</h1>
+    <p>As the article from Stanford Encyclopedia of Philosophy states, “so beyond “responsible use”,</p>
+    <p>We also need “responsible design” in this field. The focus on use does not presuppose which ethical approaches are best suited for tackling these issues; </p>
+    <p>they might well be virtue ethics (Vallor 2017) rather than consequentialist or value-based (Floridi et al. 2018).”</p>
+    <img src="images/al.png" alt="Stressed AI">
+    <br>
+    <button onclick="showNextSection()">Next</button>
+  </div>
+
+
+  <div class="section" id="section10">
+    <h1>How does it impact daily life?</h1>
+    <p>AI bias has an enormous influence on everyday life and on several areas of society as a whole. All of these algorithms are currently in use. </p>
+    <p>Algorithms in the hiring and employment, speeding up the process but can enable discrimination and prevent people from having equal chances for employment. </p>
+    <p>Financial systems driven by biased AI could mistakenly widen the gaps in availability of resources, or improve it.</p>
+    <p>Algorithmic bias within healthcare has the possibility to cause inaccurate diagnoses and unequal treatment but better chances of healthcare. </p>
+    <p>When biased algorithms have an impact on the legal system, the fairness of decisions may be hindered and based in stereotypes. </p>
+    <img src="images/al.png" alt="Stressed AI">
+    <br>
+    <button onclick="showNextSection()">Next</button>
+  </div>
+
+  <div class="section" id="section11">
+    <h1>How does it impact daily life? (Continued)</h1>
+    <p>Education, the basis of development in society, may face issues if AI fuels incorrect data but could also provide learning oppurtunities. </p>
+    <p>Social media sites, which often operate through AI algorithms, have the potential to spread propaganda and create harmful echo chambers but can also provide accurate content. </p>
+    <h1>The prevalence of biased AI highlights the value of critical thinking when blindly assuming information is unbiased; it can lead to completely unethical conclusions.</h1>
+    <img src="images/al.png" alt="Stressed AI">
+    <br>
+    <button onclick="showNextSection()">Next</button>
+  </div>
+
+
+  <div class="section" id="section12">
+    <h1>My Personal Stance</h1>
+    <p>I believe that AI algorithmic bias must be actively addressed.</p>
+    <p>Recent articles containing real-world evidence of algorithmic bias reinforce my desire to continue advancing equity and diversity in computer science, which I believe could decrease AI bias.</p>
+    <p>The gender-biased AI recruiting tool that Amazon abandoned has been made public, drawing attention to the major issues confronting the technology industry. </p>
+    <p>As a woman going into a male-dominated field, it is a concern for me how easy it is for people to overlook gender-bias in AI and technology.</p>
+    <p>It emphasizes how easily it is for companies to let things slip by that cause minorities to lose job opportunities. </p>
+    <br>
+    <img src="images/sadamazon.jpeg" alt="Stressed AI">
+    <br>
+    <button onclick="showNextSection()">Next</button>
+  </div>
+  
+  <div class="section" id="section13">
+    <h1>My Personal Stance (Continued) </h1>
+    <p>The effects of bias in voice-operated systems have also been documented, as proven by the difficulties experienced by people with accents.</p>
+    <p>These events showcase the need of having diverse and equitable data. My advocacy in the technology industry is consistent with these findings;</p>
+    <p>I want to stress the importance of inclusive programming, ethical practices, and diversity in computer science.</p>
+    <h1>In order to do that, we must responsibly address AI bias.</h1>
+    <img src="images/alexa.jpg" alt="Stressed AI">
+    <br>
+    <button onclick="showNextSection()">Next</button>
+  </div>
+
+
+  <div class="section" id="section14">
+    <h1>Thank you.</h1>
+    <img src="images/Me.png" alt="Stressed AI">
+    <footer><p> Credits to <a href="mailto:gregr769@hsd.k12.or.us"> Riley Gregory</a> &copy; 2023.</p></footer>
+  </div>
+  <script src="scripts.js"></script>
+</body>
+</html>

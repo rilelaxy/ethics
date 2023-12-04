@@ -1,116 +1,62 @@
 body {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 17px;
-  line-height: 1.6;
-  color: #023535;
-  background: linear-gradient(#f0fcff, #d9f7ff); 
-}
-
-/* Navigation Bar */
-nav {
-  top: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
-  position: fixed;
-  z-index: 1000;
-  background-color: #3498db; 
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-nav ul {
-  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
+  padding: 0;
   display: flex;
-  list-style-type: none;
-  border: 2.6px solid #3498db;
-  flex-direction: row;
   justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f4f4f4;
+  
 }
 
-nav a {
-  padding: 10px 20px; 
+.section {
+  display: none;
+  text-align: center;
+  padding: 30px;
+}
+
+#section1 {
   display: block;
-  text-decoration: none;
-  color: #fff; 
-  background-color: #3498db;
-  border-radius: 5px; 
-  transition: transform 0.3s ease;
 }
 
-nav a:hover {
-  color: #015958;
-  background-color: #d9f7ff; 
-  transform: scale(1.1);
+button {
+  font-size: 18px;
+  padding: 12px 20px;
+  cursor: pointer;
+  background-color: #756868;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
 }
 
-div p, h1, h2, h3, img {
-  max-width: 800px;
-  padding: 10px;
-  transition: transform 0.3s ease;
+button:hover {
+  background-color: #9ab86e;
 }
 
-img:hover,
-div p:hover,
-h1:hover,
-h2:hover,
-h3:hover {
-  transform: scale(1.02);
+ul {
+  list-style-position: inside;
+  text-align: left;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
 
-h1, h2, h3, p {
-  color: #023535;
+p {
+  text-align: justify;
+  line-height: 1;
+  font-size: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
 }
 
 a {
-  color: #3498db;
-}
-
-hr {
-  height: 2px;
-  border: none;
-  background: linear-gradient(to right, #3498db, #05c7c456, #3498db);
-}
-
-h2,
-hr {
-  clear: both;
-}
-
-figure {
-  border: 2px solid #3498db;
-  border-radius: 8px; 
-  overflow: hidden; 
-  width: 200px;
-  float: right;
-}
-
-figure img {
-  width: 100%;
-  border-bottom: 2px solid #3498db;
-}
-
-figcaption {
-  padding: 10px;
-  text-align: center;
-  background: #d9f7ff;
-  border-top: 2px solid #3498db;
-}
-
-figure a {
-  color: #ff6392;
-}
-
-figure a:visited,
-figure a:hover {
-  color: #ffe7ee;
-}
-
-body::-webkit-scrollbar {
-  width: 12px;
-}
-
-body::-webkit-scrollbar-thumb {
-  background-color: #3498db;
+  color: #9ab86e;
 }
